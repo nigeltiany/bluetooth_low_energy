@@ -2,14 +2,13 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:bluetooth_low_energy_platform_interface/bluetooth_low_energy_platform_interface.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_bluez.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_event_args.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_gatt_characteristic2.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_gatt_descriptor2.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_gatt_service2.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_peripheral2.dart';
 import 'package:bluez/bluez.dart';
-
-import 'my_bluez.dart';
-import 'my_event_args.dart';
-import 'my_gatt_characteristic2.dart';
-import 'my_gatt_descriptor2.dart';
-import 'my_gatt_service2.dart';
-import 'my_peripheral2.dart';
 
 class MyCentralManager extends CentralManager {
   final BlueZClient _blueZClient;

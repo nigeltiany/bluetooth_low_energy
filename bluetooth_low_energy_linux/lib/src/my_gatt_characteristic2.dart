@@ -1,8 +1,7 @@
 import 'package:bluetooth_low_energy_platform_interface/bluetooth_low_energy_platform_interface.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_bluez.dart';
+import 'package:bluetooth_low_energy_platform_linux/src/my_gatt_descriptor2.dart';
 import 'package:bluez/bluez.dart';
-
-import 'my_bluez.dart';
-import 'my_gatt_descriptor2.dart';
 
 class MyGattCharacteristic2 extends MyGattCharacteristic {
   final BlueZGattCharacteristic blueZCharacteristic;
